@@ -24,7 +24,7 @@
 
 .container .insights {
   width: 1100px;
-  height: 448px;
+  height: 446px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,5 +33,24 @@
           justify-content: center;
   background: #1b1938;
   border-radius: 5px;
+}
+
+.container .insights .about .purpleColor {
+  color: #aa5cdb;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(160, 70, 216, 0.452);
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
