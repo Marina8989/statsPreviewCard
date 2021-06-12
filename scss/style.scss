@@ -2,7 +2,7 @@
 $darkBlueBG: hsl(233, 47%, 7%);
 $darkBlueCard: hsl(244, 38%, 16%);
 $softViolet: hsl(277, 64%, 61%);
-$softVioletTransparent: hsla(277, 65%, 56%, 0.452);
+$softVioletTransparent: hsla(277, 80%, 45%, 0.541);
 
 //neutral colors
 $whiteMain: hsl(0, 0%, 100%);
@@ -35,14 +35,47 @@ $font-size: 15px;
     justify-content: center;
     background: $darkBlueCard;
     border-radius: 5px;
+    
 
-    .about .purpleColor{
+    .about{
+      display: block;
+      flex-wrap: flex;
+      text-align: left;
+      padding: 3.7rem 8.2rem;
+
+      h1{
+          font-size: 32px;
+          margin-bottom: 1.5rem;
+      }
+      p{
+          font-size: 15px;
+          color: $whiteStatHeading;
+      }
+        .purpleColor{
         color: $softViolet;
+      }
     }
-  }
-}
 
- .hero{
+    .stats{
+       display: flex;
+       justify-content: space-between;
+       padding-top: 7rem; 
+
+       .statistic span{
+           font-weight: bold;
+           color: $whiteMain;
+       }
+       .statistic p{
+           color: $whiteStatHeading;
+           text-transform: uppercase;
+           font-size: 10px;
+           padding-top: .3rem;
+       }
+    } 
+
+  }
+
+  .hero{
       position: relative;
   }
 
@@ -56,3 +89,6 @@ $font-size: 15px;
      background: $softVioletTransparent;
      z-index: 1;
   }
+}
+
+ 
